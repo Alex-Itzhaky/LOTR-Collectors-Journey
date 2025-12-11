@@ -16,6 +16,8 @@ let cardTab = document.getElementById('card_tab')
 let tradeTab = document.getElementById('trade_tab')
 let storeTab = document.getElementById('store_tab')
 let contactsTab = document.getElementById('contacts_tab')
+let loginButton = document.getElementById('login_button')
+let signUpButton = document.getElementById('sign_up_button')
 
 let headline = document.getElementById('headline')
 let headlineGradient = document.getElementById('headline_intro')
@@ -42,7 +44,7 @@ let newsletterInput = document.getElementById('newsletter_input')
 let xIcon = document.getElementById('x_icon')
 
 let blackAndWhiteDivs = [headerDiv, footerDiv]
-let tabButtons = [cardsButton, tradeButton, storeButton, contactsButton]
+let tabButtons = [cardsButton, tradeButton, storeButton, contactsButton, loginButton,signUpButton]
 let tabList = [cardTab, tradeTab, storeTab, contactsTab]
 let yellowText = [headerSeparator, headlineText, cardsHeadline]
 let heroCards = [frodoCard, gandalfCard, aragornCard]

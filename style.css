@@ -65,20 +65,20 @@ header {
 }
 
 .card_tab {
-    left: 265px;/*base 242px*/
+    left: 245px;
 }
 
 .trade_tab {
-    left: 450px;
+    left: 415px;
 }
 
 
 .store_tab{
-    left: 640px;
+    left: 580px;
 }
 
 .contacts_tab{
-    left: 847px;
+    left: 770px;
 }
 
 .tab_reveal{
@@ -129,6 +129,18 @@ header {
     align-items: center;
 }
 
+.header_login{
+    color:white;
+    background-color: black;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.header_login:hover{     
+    text-shadow: 1px 1px 20px white;
+    transition: all 0.3s ease-in-out;
+}
+
 .header_light_mode_button img {
     object-fit: contain;
     width: 100%;
@@ -151,13 +163,11 @@ main{
     text-align: center;
     object-fit: cover;
     background-color: rgb(30, 68, 38);
-    transition: all 0.3s ease-in-out;
 }
 
 .headline_text{
     margin: 30px;
     color: rgb(199, 188, 28);
-    text-shadow: 3px 3px 10px black;
     transition: all 0.3s ease-in-out;
 }
 
@@ -168,6 +178,8 @@ main{
 .headline_subtext{
     font-size: 30px;
 }
+
+
 
 .headline_intro{
     width: 100%;
@@ -489,7 +501,7 @@ main{
 }
 
 .light_mode_headline{
-    background-color: rgb(185, 181, 117, 28);
+    background-color: rgb(185, 181, 117);
 }
 
 .light_mode_gradient_headline{
