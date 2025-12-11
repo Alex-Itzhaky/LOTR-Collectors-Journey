@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kings&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_div"
+        id = "header_div">
+            <div class = 'logo_header'>
+                <img
+                    src="ring_transparent.png"
+                    alt="ring logo"
+                    id = 'logo_header'
+                />
+            </div>
+            <div class="header_main_buttons">
+                <button onclick = 'tabReveal(0)' class="header_button" id ='cards_button'>CARDS</button>
+                <button onclick ='tabReveal(1)' class="header_button" id ='trade_button'>TRADE</button>
+                <button onclick="tabReveal(2)" class="header_button" id ='store_button'>STORE</button>
+                <button onclick="tabReveal(3)" class="header_button" id="contacts_button">CONTACTS</button>
+            </div>
+            <div class="header_account_buttons">
+                <div class="header_login_button">Log In</div>
+                <div class="header_signup_button">Sign Up</div>
+                <div class="header_light_mode_button">
+                    <img 
+                        src="dark_mode_button.png"
+                        alt="light mode button"
+                        id = "light_mode_button"
+                    />
+                </div>
+            </div>
+        </div>
+        <hr class="header_separator" id="header_separator" />
+        <div class="tabs" id="tabs">
+            <div class = "card_tab base_tab" id = 'card_tab'>
+                <h3 class = 'tab_text'>THE FELLOWSHIP</h3>
+                <h3 class = 'tab_text'>MORDOR'S FORCES</h3>
+                <h3 class = 'tab_text'>THE KINGDOMS OF MEN</h3>
+                <h3 class = 'tab_text'>THE ELVEN CITIES</h3>
+            </div>
+            <div class = "trade_tab base_tab" id="trade_tab">
+                <h3 class = 'tab_text'>TRADE OFFERS</h3>
+                <h3 class = 'tab_text'>TRADE WITH A FRIEND</h3>
+                <h3 class = 'tab_text'>FIND A TRADE</h3>
+                <h3 class = 'tab_text'>TRADE TOKENS</h3>
+            </div>
+            <div class = "store_tab base_tab" id="store_tab">
+                <h3 class = 'tab_text'>GET YOUR STARTER PACK</h3>
+                <h3 class = 'tab_text'>OUR BEST SELLERS</h3>
+                <h3 class = 'tab_text'>ACCESSORIES</h3>
+                <h3 class = 'tab_text'>VIEW ALL OUR PRODUCTS</h3>
+            </div>
+            <div class ="contacts_tab base_tab" id = "contacts_tab">
+                <h3 class = 'tab_text'>YOUR FRIENDS</h3>
+                <h3 class = 'tab_text'>ADD A FRIEND</h3>
+                <h3 class = 'tab_text'>YOUR INBOX</h3>
+                <hr />
+                <h3 class = 'tab_text'>CONTACT US</h3>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="headline" id="headline">
+            <div class="headline_intro" id="headline_intro">
+                <div class="headline_text" id ='headline_text'>
+                    <h2 class="headline_title">Lord of the Rings : Collector's Journey</h2>
+                    <p class="headline_subtext">Discover and trade the legendary heroes and villains of Middle-earth, collecting unique cards that bring the epic tales of Tolkien’s world to your fingertips.</p>
+                </div>
+            </div>
+            <div class="get_started_button" id="get_started_button">
+                <h2>Get started !</h2>
+            </div>
+        </div>
+        <div class="character_cards" id ='character_cards_div'>
+            <h1 class="character_cards_headline" id='character_cards_headline'>Heroes and Villains</h1>
+            <div class="char_duo">
+                <div class="hero_card">
+                    <div class="hero_main_card" id = 'frodo_card'>
+                        <img src="frodo placeholder.jpg" alt="frodo_card">
+                        <p class="hero_card_text">A brave hobbit from the Shire facing countless dangers to throw the One Ring into the fires of Mount Doom.</p>
+                        <h3>Bravery</h3>
+                    </div>
+                    <div class="hero_hover_button" id = 'frodo_button'>
+                        <a href="https://lotr.fandom.com/wiki/Frodo_Baggins" target="_blank">Go to the wiki</a>
+                    </div>
+                </div>
+                <div class="villain_card">
+                    <div class="villain_main_card" id = 'gollum_card'>
+                        <img src="gollum placeholder.jpeg" alt="gollum_card">
+                        <p class="villain_card_text">A twisted creature consumed by his obsession with the One Ring, torn between greed and the last flickers of his lost humanity.</p>
+                        <h3>Obsession</h3>
+                    </div>
+                    <div class="villain_hover_button" id = 'gollum_button'>
+                        <a href="https://lotr.fandom.com/wiki/Gollum" target="_blank">Go to the wiki</a>
+                    </div>
+                </div>
+            </div>
+            <div class="char_duo">
+                <div class="hero_card">
+                    <div class="hero_main_card" id = 'gandalf_card'>
+                        <img src="gandalf placeholder.jpg" alt="gandalf_card">
+                        <p class="hero_card_text">A wise and powerful wizard guiding the Fellowship through shadow and flame, ever standing against the darkness of Sauron.</p>
+                        <h3>Wisdom</h3>
+                    </div>
+                    <div class="hero_hover_button" id = 'gandalf_button'>
+                        <a href="https://lotr.fandom.com/wiki/Gandalf" target="_blank">Go to the wiki</a>
+                    </div>
+                </div>
+                <div class="villain_card">
+                    <div class="villain_main_card" id = 'witch_king_card'>
+                        <img src="with king placeholder.png" alt="witch_king_card">
+                        <p class="villain_card_text">The dread Lord of the Nazgûl, wielding terror and dark sorcery as Sauron’s most feared servant on the battlefield.</p>
+                        <h3>Terror</h3>
+                    </div>
+                    <div class="villain_hover_button" id = 'witch_king_button'>
+                        <a href="https://lotr.fandom.com/wiki/Witch-king_of_Angmar" >Go to the wiki</a>
+                    </div>
+                </div>
+            </div>
+            <div class="char_duo">
+                <div class="hero_card">
+                    <div class="hero_main_card" id = 'aragorn_card'>
+                        <img src="aragorn placeholder.png" alt="aragorn_card">
+                        <p class="hero_card_text">The heir of Isildur and a ranger of the North, destined to reclaim the throne of Gondor and lead men against the shadow.</p>
+                        <h3>Valor</h3>
+                    </div>
+                    <div class="hero_hover_button" id = 'aragorn_button'>
+                        <a href="https://lotr.fandom.com/wiki/Aragorn_II" target="_blank">Go to the wiki</a>
+                    </div>
+                </div>
+                <div class="villain_card" >
+                    <div class="villain_main_card" id ='gothmog_card'>
+                        <img src="gothmog placeholder.png" alt="gothmog_card">
+                        <p class="villain_card_text">A ruthless orc commander of Mordor, leading Sauron’s legions with brutal strength and merciless cruelty in the war for Middle-earth.</p>
+                        <h3>Brutality</h3>
+                    </div>
+                    <div class="villain_hover_button" id='gothmog_button'>
+                        <a href="https://lotr.fandom.com/wiki/Gothmog" >Go to the wiki</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+    <div class="footer_div" id = "footer_div">
+        <div class="footer_logo">
+            <img src="ring_transparent.png" alt="footer logo" />
+        </div>
+        <div class="footer_newsletter">
+            <p>Subscribe to our newsletter</p>
+            <input type="text" placeholder="Enter your email" id ='newsletter_input' />
+        </div>
+        <div class="footer_socials">
+            <div class="social_icon">
+                <img src="facebook placeholder.png" alt="facebook" />
+            </div>
+            <div class="social_icon x_icon">
+                <img src="x_dark_mode.png" alt="x placeholder" id = 'x_icon' />
+            </div>
+            <div class="social_icon">
+                <img src="instagram placeholder.png" alt="instagram" />
+            </div>
+        </div>
+    </div>
+    <script src = "main.js"></script>
+</footer>
+</body>
+</html>
